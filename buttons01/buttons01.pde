@@ -33,7 +33,7 @@ void setup() {
 	// Timer (fires every 4ms)
 	TCCR0A = 2;		// OC0A and OC0B disconnected, CTC mode
 	// TCCR0B will be written last, since it is used to enable the timer
-	OCR0A = 249;	// 4ms period @ 16MHz with a 256 prescaler
+	OCR0A = 124;	// 8ms period @ 16MHz with a 1024 prescaler
 					// setting
 	TCNT0 = 0;
 	TIMSK0 |= _BV( OCIE0A );// enable output compare A interrupt
@@ -67,7 +67,7 @@ void setup() {
 		buttonStates[i] = false;
 	}
 	sei();
-	TCCR0B = 4;	// start timer using a 1:256 prescaler
+	TCCR0B = 5;	// start timer using a 1:1024 prescaler
 }
 
 int state = 0;
