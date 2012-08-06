@@ -11,7 +11,7 @@
 #include <avr/interrupt.h>
 #include <avr/sleep.h>
 
-const int LED_PIN = 2;
+const int LED_PIN = 13;
 const int SQW_PIN = 3;
 const int SS_PIN = 10;
 

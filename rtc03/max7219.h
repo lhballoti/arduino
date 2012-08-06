@@ -1,7 +1,7 @@
 #ifndef __MAX7219__
 #define __MAX7219__
 
-#include <WProgram.h>
+#include <Arduino.h>
 
 #define MAX7219_SS_PIN 10
 

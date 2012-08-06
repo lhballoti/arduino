@@ -7,7 +7,7 @@
 #define BUTTON_MATRIX_ROWS A1, A0, A2
 #define BUTTON_MATRIX_COLUMNS 7, 8, 9
 
-#include <WProgram.h>
+#include <Arduino.h>
 
 void ButtonMatrix_Init();
 
